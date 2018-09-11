@@ -1,0 +1,86 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(18, 18, 18, 0.5);;
+    color: #f1f1f1;
+    width: 50%;
+    padding: 20px;
+    margin-left: 20%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.inputcontrol
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .logform{
+        width: 40% !important;
+    }
+
+    .content{
+       
+        margin-bottom: 25%;
+    }
+}
+
+/* @media only screen and (min-width: 1024px) {
+    .content{
+        width: 73%;
+        margin-bottom: 48%;
+    }
+} */
+
+
+@media only screen and (max-width: 414px) {
+    .content{
+        background: rgba(18, 18, 18, 0.5);;
+        margin-bottom: 48%;
+        width: 64%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content{
+        width: 73%;
+        margin-bottom: 48%;
+    }
+}
